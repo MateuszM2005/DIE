@@ -1,0 +1,28 @@
+{% extends "game/base.html" %}
+{% load static %}
+
+{% block content %}
+<canvas id="gameCanvas"></canvas>
+
+<script>
+    window.GameConfig = {
+        staticUrls: {
+            // Paths to map tiles (Subfolder MAP)
+            empty: "{% static 'game/textures/MAP/TILE.png' %}",
+            wall: "{% static 'game/textures/MAP/WALL.png' %}",
+            fire: "{% static 'game/textures/MAP/FIRE.png' %}",
+            rift: "{% static 'game/textures/MAP/RIFT.png' %}",
+            spikes: "{% static 'game/textures/MAP/SPIKES.png' %}",
+
+            // Paths to objects (Subfolder ENTITY)
+            box: "{% static 'game/textures/ENTITY/BOX.png' %}",
+            angel: "{% static 'game/textures/ENTITY/ANGEL.png' %}",
+            devil: "{% static 'game/textures/ENTITY/DEVIL.png' %}",
+            crown: "{% static 'game/textures/ENTITY/CROWN.png' %}",
+            grail: "{% static 'game/textures/ENTITY/GRAIL.png' %}",
+            angel_crown: "{% static 'game/textures/ENTITY/ANGEL_CROWN.png' %}"
+        }
+    };
+</script>
+<script src="{% static 'game/dist/main.js' %}"></script>
+{% endblock %}

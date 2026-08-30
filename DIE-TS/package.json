@@ -1,0 +1,14 @@
+{
+  "name": "die",
+  "version": "1.0.0",
+  "scripts": {
+    "check": "tsc --noEmit",
+    "build": "npm run check && esbuild src/main.ts --bundle --outfile=game/static/game/dist/main.js --sourcemap",
+    "dev": "esbuild src/main.ts --bundle --outfile=game/static/game/dist/main.js --sourcemap --watch"
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.0",
+    "esbuild-windows-64": "^0.15.18",
+    "typescript": "^5.4.0"
+  }
+}

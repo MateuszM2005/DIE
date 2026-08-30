@@ -1,0 +1,31 @@
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.Python
+
+# Node
+node_modules/
+npm-debug.log*
+
+# Django
+db.sqlite3
+*.sqlite3
+/staticfiles/
+
+# IDE / OS
+.idea/
+.vscode/
+*.iml
+.DS_Store
+Thumbs.db
+
+# Build / env
+.env
+.env.*
+!.env.example
+
+# Generated client bundle (rebuild with npm run build)
+DIE-TS/game/static/game/dist/
