@@ -7,3 +7,8 @@ __pycache__/
 *.iml
 .DS_Store
 *.egg-info/
+
+# Generator output and solver dumps
+generated/
+solver_results.json
+solver_level*.json
